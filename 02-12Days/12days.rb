@@ -54,13 +54,21 @@ class Xmas
   end
 
   def self.sing
-    return self.verse(0) + "\n" + "\n" + self.verse(1) + "\n" + "\n" +
-    self.verse(2) + "\n" + "\n" + self.verse(3) + "\n" + "\n" +
-    self.verse(4) + "\n" + "\n" + self.verse(5) + "\n" + "\n" +
-    self.verse(5) + "\n" + "\n" + self.verse(6) + "\n" + "\n" +
-    self.verse(7) + "\n" + "\n" + self.verse(8) + "\n" + "\n" +
-    self.verse(9) + "\n" + "\n" + self.verse(10)+ "\n" + "\n" +
-    self.verse(11)
+    num = 0
+    while num < 12
+      num += 1
+      return self.verse(num) + "\n" + "\n"
+    end
+
+
+
+    # return self.verse(0) + "\n" + "\n" + self.verse(1) + "\n" + "\n" +
+    # self.verse(2) + "\n" + "\n" + self.verse(3) + "\n" + "\n" +
+    # self.verse(4) + "\n" + "\n" + self.verse(5) + "\n" + "\n" +
+    # self.verse(5) + "\n" + "\n" + self.verse(6) + "\n" + "\n" +
+    # self.verse(7) + "\n" + "\n" + self.verse(8) + "\n" + "\n" +
+    # self.verse(9) + "\n" + "\n" + self.verse(10)+ "\n" + "\n" +
+    # self.verse(11)
 
   end
 end
